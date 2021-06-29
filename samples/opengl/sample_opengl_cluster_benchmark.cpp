@@ -446,7 +446,7 @@ class Sample : public RendererSampleWindow
                 // TLD ISR
                 {
                     renderer->lighting.setClusterType(2);
-                    CPUPlaneClustererParameters params;
+                    ClustererParameters params;
                     params.screenSpaceTileSize     = tileSizeSettings[2];
                     params.depthSplits             = 0;
                     params.clusterThreeDimensional = false;
@@ -459,7 +459,7 @@ class Sample : public RendererSampleWindow
                 // CLD SP
                 {
                     renderer->lighting.setClusterType(1);
-                    CPUPlaneClustererParameters params;
+                    ClustererParameters params;
                     params.screenSpaceTileSize     = tileSizeSettings[3];
                     params.depthSplits             = depthSplitSettings[0];
                     params.clusterThreeDimensional = true;
@@ -472,7 +472,7 @@ class Sample : public RendererSampleWindow
                 // CLD ISR
                 {
                     renderer->lighting.setClusterType(2);
-                    CPUPlaneClustererParameters params;
+                    ClustererParameters params;
                     params.screenSpaceTileSize     = tileSizeSettings[4];
                     params.depthSplits             = depthSplitSettings[1];
                     params.clusterThreeDimensional = false;
@@ -485,7 +485,7 @@ class Sample : public RendererSampleWindow
                 // CLD GA
                 {
                     renderer->lighting.setClusterType(3);
-                    CPUPlaneClustererParameters params;
+                    ClustererParameters params;
                     params.screenSpaceTileSize     = tileSizeSettings[5];
                     params.depthSplits             = depthSplitSettings[2];
                     params.clusterThreeDimensional = true;
